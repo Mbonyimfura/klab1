@@ -84,7 +84,11 @@ body{
     height: 30%px;
     margin-left: 5%;
     margin-top: 10%;
+    filter: grayscale(100%);
+    
+   
 }
+
 @media only screen and (max-width: 600px) {
     .nav{
         background-color: #333;

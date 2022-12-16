@@ -109,8 +109,9 @@ body{
 }
 </style>
 <body>
+  
     <nav class="nav">
-        <a href="#">Portofolio</a>
+        <a href="portofolio.html">Portofolio</a>
         <a href="contact.html">Contact</a>
         <a href="about.html">About</a>
         <a href="guest.html">Home</a>
@@ -121,18 +122,26 @@ body{
         <div class="title">
           <h1>Get in <span style="color:AE5858;">Touch</span>
         </div>
+        <form action="" class="form">
         <div class="contact-form">
           <div class="input-fields">
-            <input type="text" class="input" placeholder="Name">
-            <input type="text" class="input" placeholder="Email Address">
-            <input type="text" class="input" placeholder="Phone">
+            <input type="text" class="input" placeholder="Name" required>
+            <span id="txt"></span>
+            <input type="email" class="input"id="email" placeholder="Email Address" required>
+            <span id="text"></span>
+            <input type="text" class="input" placeholder="Phone" id="phone">
+            <span id="number"></span>
             <input type="text" class="input" placeholder="Subject">
           </div>
           <div class="msg">
             <textarea placeholder="Message"></textarea>
-            <div class="btn">send message</div>
+           <div><input class="btn" type="submit" value="send message"></div>
           </div>
         </div>
+      
       </div>
+    </form>
+    
+    <script src="app.js"></script>
  </body>
 </html>

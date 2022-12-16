@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<style>
+
+.flip-card {
+    background-color: transparent;
+    width: 50%;
+    height: 100%;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+  }
+  
+ 
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #bbb;
+    color: white;
+    transform: rotateY(180deg);
+  }</style>
+<body>
+    <nav class="nav">
+        <a href="portofolio.html">Portofolio</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="guest.html">Home</a>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./image/tresor.jpeg" alt="profile" class="img" style="width:500px;height:500px">
+          </div>
+          <div class="flip-card-back">
+            <br>
+            <h1>Tresor MBONYIMFURA</h1>
+            <p>Developer & Engineer</p>
+            <p>We love this guy</p>
+            <br>
+            <h1>Technical Skills</h1>
+            <p>HTML5/HTML , CSS, JavaScript, Node js,React-Native</p>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
